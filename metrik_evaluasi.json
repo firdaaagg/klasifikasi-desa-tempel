@@ -1,0 +1,96 @@
+{
+  "jumlah_data": 72,
+  "jumlah_per_kategori": {
+    "Kegiatan": 18,
+    "Potensi Desa": 18,
+    "Pengumuman": 18,
+    "Berita": 18
+  },
+  "perbandingan_model_nested_cv": {
+    "Logistic Regression": {
+      "akurasi_mean": 0.9314285714285715,
+      "akurasi_std": 0.05294929761492434,
+      "f1_macro_mean": 0.9294642857142857,
+      "f1_macro_std": 0.05400874196126818,
+      "waktu_detik": 3.4
+    },
+    "Naive Bayes": {
+      "akurasi_mean": 0.9176190476190478,
+      "akurasi_std": 0.050621981727443324,
+      "f1_macro_mean": 0.9170436507936508,
+      "f1_macro_std": 0.05049479993507994,
+      "waktu_detik": 1.8
+    },
+    "SVM Linear": {
+      "akurasi_mean": 0.9242857142857144,
+      "akurasi_std": 0.04778305091398545,
+      "f1_macro_mean": 0.9208928571428572,
+      "f1_macro_std": 0.04867222025514535,
+      "waktu_detik": 2.9
+    },
+    "Random Forest": {
+      "akurasi_mean": 0.9033333333333333,
+      "akurasi_std": 0.07053568917017837,
+      "f1_macro_mean": 0.8987301587301587,
+      "f1_macro_std": 0.07932395760067135,
+      "waktu_detik": 11.4
+    }
+  },
+  "model_terpilih": "Logistic Regression",
+  "parameter_terbaik": {
+    "clf__C": 10,
+    "tfidf__ngram_range": [
+      1,
+      2
+    ]
+  },
+  "cv_5fold": {
+    "akurasi": 0.9306,
+    "f1_macro": 0.9312
+  },
+  "holdout_25persen": {
+    "jumlah_uji": 18,
+    "akurasi": 0.9444
+  },
+  "latih_tambahan_uji_asli_akurasi": 0.875,
+  "confidence_rata2_benar": 0.5677,
+  "laporan_per_kelas": {
+    "Berita": {
+      "precision": 1.0,
+      "recall": 0.8888888888888888,
+      "f1-score": 0.9411764705882353,
+      "support": 18.0
+    },
+    "Kegiatan": {
+      "precision": 0.8421052631578947,
+      "recall": 0.8888888888888888,
+      "f1-score": 0.8648648648648649,
+      "support": 18.0
+    },
+    "Pengumuman": {
+      "precision": 0.8947368421052632,
+      "recall": 0.9444444444444444,
+      "f1-score": 0.918918918918919,
+      "support": 18.0
+    },
+    "Potensi Desa": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 18.0
+    },
+    "accuracy": 0.9305555555555556,
+    "macro avg": {
+      "precision": 0.9342105263157895,
+      "recall": 0.9305555555555556,
+      "f1-score": 0.9312400635930048,
+      "support": 72.0
+    },
+    "weighted avg": {
+      "precision": 0.9342105263157894,
+      "recall": 0.9305555555555556,
+      "f1-score": 0.9312400635930048,
+      "support": 72.0
+    }
+  }
+}
